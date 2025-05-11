@@ -1,0 +1,8 @@
+{
+  "cSpell.words": ["Mitansh", "ssprc"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "editor.formatOnSave": true
+}

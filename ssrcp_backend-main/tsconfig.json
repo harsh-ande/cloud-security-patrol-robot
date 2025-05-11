@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist"
+    },
+    "lib": ["es2015"],
+    "command": "tsc",
+
+    "showOutput": "silent",
+    "isShellCommand": true,
+    "problemMatcher": "$tsc",
+    "exclude": ["./dist/*"]
+}

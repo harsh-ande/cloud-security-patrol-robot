@@ -1,0 +1,6 @@
+{
+    "watch": ["src"],
+    "ext": "ts",
+    "ignore": ["dist"],
+    "exec": " yarn lintPrettier --write && tsc && node dist/app.js"
+}

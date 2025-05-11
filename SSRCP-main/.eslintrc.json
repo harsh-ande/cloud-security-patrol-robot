@@ -1,0 +1,42 @@
+{
+  "env": { "browser": true, "es2021": true },
+
+  "extends": [
+    "plugin:react/recommended",   // React rules
+    "prettier"                    // Prettier overrides stylistic rules
+  ],
+
+  "plugins": ["react", "prettier"],
+
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+
+  "rules": {
+    "react/prop-types": "off",
+    /* -- keep Prettier (it ignores blank-line trivia by default) -- */
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+
+    /* your functional overrides — leave these as you like */
+    "react/display-name": "off",
+    "default-param-last": "off",
+    "react/react-in-jsx-scope": "off",
+
+    /* ----- ⬇️  disable every rule that complains about line / blank-line spacing ⬇️ ----- */
+    "linebreak-style": "off",
+    "padding-line-between-statements": "off",
+    "lines-between-class-members": "off",
+    "padded-blocks": "off",
+    "react/jsx-curly-spacing": "off",
+    /* react/jsx-props-no-spreading isn't about line spacing,      *
+     * but you can relax it from "warn" to "off" if you wish:      */
+    "react/jsx-props-no-spreading": "off"
+  },
+
+  "settings": {
+    "react": { "version": "detect" },
+    "import/resolver": { "node": { "paths": ["src"] } }
+  }
+}
